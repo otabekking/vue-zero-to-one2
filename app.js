@@ -47,18 +47,45 @@
  // This fourth lesson
 
 
+ //  new Vue({
+ //      el: '#app',
+ //      data: {
+ //          counter: 0,
+ //          counter2: 0
+ //      },
+ //      methods: {
+ //          RiseCounter: function () {
+ //              this.counter--
+ //          },
+ //          hover: function (event) {
+ //              event.target.style.color = 'red'
+ //          }
+ //      }
+ //  });
+
+ // This fifth lesson
+
  new Vue({
      el: '#app',
      data: {
-         counter: 0,
-         counter2: 0
+         adder: 0,
+         Divison: "multply"
      },
      methods: {
-         RiseCounter: function () {
-             this.counter--
+         RiseNumber: function (num, event) {
+             this.adder += num
+             if (num === 5) {
+                 event.target.style.color = "red"
+             } else if (num == 10) {
+                 event.target.style.color = "blue"
+             }
+
          },
-         hover: function (event) {
-             event.target.style.color = 'red'
+         RiseNumber2: function (ad, event) {
+             this.adder += ad
+             if (ad == 10) {
+                 event.target.style.color = "greeng"
+             }
          }
      }
  })

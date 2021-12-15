@@ -46,14 +46,20 @@
 
     <!--This fourth lesson-->
 
-    <div id="app">
+    <!-- <div id="app">
         <h3>{{counter}}</h3>
         <button v-on:click="RiseCounter">Click</button>
         <hr>
         <h3>{{counter2}}</h3>
         <button v-on:mouseover='hover' v-on:click="counter2++">Click</button>
-    </div>
+    </div> -->
 
+    <!--This fifth lesson-->
+    <div id="app">
+        <h1> {{Divison}}={{adder}}</h1>
+        <button v-on:click="RiseNumber(5,$event) ">adding 5</button>
+        <button v-on:click="RiseNumber2(10,$event)">adding 10</button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="./app.js"></script>
