@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -28,13 +29,15 @@
 
     </div> -->
 
-    <!--This secon Lesson-->
+    <!--This second Lesson-->
     <!-- <div id="app">
         <h2>
             <a v-bind:href="url">{{url}}</a>
             <a v-bind:href="Telegram">{{Telegram}}</a>
-        </h2>
-    </div> -->
+            
+
+        </h2> -->
+    <!-- </div> -->
 
     <!--This third lesson-->
     <!-- <div id="app">
@@ -55,14 +58,140 @@
     </div> -->
 
     <!--This fifth lesson-->
-    <div id="app">
+    <!-- <div id="app">
         <h1> {{Divison}}={{adder}}</h1>
         <button v-on:click="RiseNumber(5,$event) ">adding 5</button>
         <button v-on:click="RiseNumber2(10,$event)">adding 10</button>
-    </div>
+    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="./app.js"></script>
+    <!--This sixth lesson-->
+
+    <!-- <div id="app">
+        <h1>
+            <a href="https:/google.com" target="blank">Google</a>
+        </h1>
+        <h1 v-on:mousemove="moverhandle">X: {{X}} / Y:{{Y}} <span v-on:mousemove.stop="">stop</span></h1>
+        
+
+    </div> -->
+
+
+    <!--This seventh lesson-->
+
+    <!-- <div id="app">
+        <input type="text" v-on:keyup.enter="alertcall">
+    </div> -->
+
+    <!--This eighth lesson-->
+
+    <!-- <div id="app">
+        <h1>
+            <a :href="url">Google</a>
+        </h1>
+        <h2>
+            {{sanash}}
+        </h2>
+        <button @click="sanash++">Sanang</button>
+    </div> -->
+
+    <!-- This ninth lesson-->
+
+    <!-- <div id="app"> -->
+    <!-- <input type="text" @input="inputform =$event.target.value" :value="inputform"> -->
+    <!-- <input type="text" v-model="inputform"> -->
+    <!-- <input type="text" v-model="inputform">
+        <h2>
+            {{inputform}}
+        </h2>
+    </div> -->
+
+
+    <!-- This tenth lesson-->
+
+    <!-- <div id="app"> -->
+
+
+    <!-- <div class="circle" @click="isActive = !isActive" :class="{'red': isActive, 'green': !isActive}"></div>  bu birinchi html kornishi-->
+    <!-- <div class="circle" @click="isActive = !isActive" :class="getCssClasses"></div> -->
+
+    <!-- <div class="circle" :class="color"></div> bu birinchisi -->
+    <!-- <div class="circle" :class="[color, {'red':isActive }]"></div>
+        <input type="text" v-model="color"> -->
+
+    <!-- </div>
+
+    </div> -->
+
+    <!--This eleventh lesson -->
+
+    <!-- <div id="app">
+        <div class="circle" :style="{'background':color, 'height': height + 'px', 'width': width + 'px'}"></div> bu birinchi html  ko'rnishi  -->
+    <!-- <div class="circle" :style="circleClass"></div> -->
+    <!-- <div class="circle" :style='[circleClass,]'></div> bunga arrayga width bilan bitta qilib yozsa bualdi -->
+    <!-- <hr>
+        <p>color</p>
+        <input type="text" v-model="color">
+        <p>Height</p>
+        <input type="text" v-model="height">
+        <p>width</p>
+        <input type="text" v-model="width">
+
+    </div> -->
+
+
+    <!--This twelveth lesson-->
+
+    <div id="app">
+        <!-- <h1 v-if="Visible">Awesome</h1>
+        <h1 v-else>Oh no</h1> Bu birinchi ko'rnishi -->
+        <!-- <h2 v-if="type === 'a' ">A</h2>
+        <h2 v-else-if-="type === 'b' ">B</h2> 
+        <h2 v-else-if="type === 'a' ">C</h2>
+        <h2 v-else>none</h2>
+        <hr>
+        <input type="text" v-model="type">  Bu ikkinchisi-->
+
+        <!-- <template v-if="Visible">
+            <h2>Title name</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, repudiandae.</p>
+        </template>
+
+        <template v-else>
+            <h2 style="color:red">Title name</h2>
+            <p style="color:blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, provident.</p>
+        </template>
+
+    </div> -->
+
+        <!--This thirteenth lesson-->
+
+        <!-- <div id="app"> -->
+
+        <!-- <h1 v-if="isVisibel">I am visible!</h1>
+            <h2 v-else>i am not visible!</h2> -->
+
+        <!-- <h2 v-show="isVisibel">you can see me </h2>
+            <h2 v-show="!isVisibel">you can not see me</h2>
+
+            <hr>
+
+            <button @click="isVisibel= !isVisibel">toggle</button>
+        </div> -->
+
+        <!--This fourteenth lesson-->
+
+        <div id="app">
+
+        </div>
+
+
+
+
+
+
+        <script src=" https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"> </script>
+        <script src="./app.js">
+        </script>
 
 </body>
 
