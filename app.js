@@ -220,9 +220,97 @@
 
 // This fourteenth lesson
 
-new Vue({
+// new Vue({
+//     el: '#app',
+//     data: {
+// people: [
+//     'Anvar', 'Akmal',
+//     'jahon', 'Rashid', 'Abdulajon', 20
+// ] Bu array kornishi
+//         people: [
+
+//             {
+//                 name: 'otabek,age:22'
+//             },
+//             {
+//                 name: 'Abdulajon,age:27'
+//             },
+//             {
+//                 name: 'Teshmat,age:26'
+//             },
+//         ],
+//         worker:[
+//             'Eshmat','Ketmon','Boltvoy'
+//         ]
+//     }
+// });
+
+// This fifteenth lesson and 16
+
+// new Vue({
+//     el: '#app',
+//     data: {
+//         counter: 0,
+//         condintion: "",
+
+//     },
+//     methods: {
+//         changing: function () {
+//             this.counter++
+//             this.condintion = this.counter >= 3 ? 'more than 3' : 'less than 3'
+//         },
+//         changing2: function () {
+//             this.counter--
+//             this.condintion = this.counter >= -3 ? "not mauch num" : 'crawed num'
+//         },
+//         result: function () {
+//             console.log("result is called")
+//             return this.counter > 5 ? 'sen uta olmading' : 'sen ota olding'
+//         }
+
+//     },
+//     computed: {
+//         last: function () {
+//             console.log('')
+//             return this.counter >= 15 ? 'smart' : ' no profesional'
+//         }
+//     },
+//     watch: {
+//         counter: function () {
+//             console.log(this.counter)
+//         }
+//     }
+// });
+
+// This Seventeenth lesson
+
+let vue1 = new Vue({
     el: '#app',
     data: {
+        title: 'hello vue'
+    },
+    methods: {
+        alertFast: function () {
+            alert('do you want to join vue 1')
+        }
+    }
 
+});
+console.log(vue1)
+vue1.newfield = 'Random text'
+new Vue({
+    el: '#app2',
+    data: {
+        title: 'hello vue2'
+    },
+    methods: {
+        salom: function () {
+            vue1.title = 'hello everyone'
+            vue1.newfield = 'my friends are very clever'
+
+            setTimeout(function () {
+                vue1.alertFast()
+            }, 5000)
+        }
     }
 })

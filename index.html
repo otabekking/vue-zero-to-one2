@@ -141,17 +141,17 @@
 
     <!--This twelveth lesson-->
 
-    <div id="app">
-        <!-- <h1 v-if="Visible">Awesome</h1>
+    <!-- <div id="app"> -->
+    <!-- <h1 v-if="Visible">Awesome</h1>
         <h1 v-else>Oh no</h1> Bu birinchi ko'rnishi -->
-        <!-- <h2 v-if="type === 'a' ">A</h2>
+    <!-- <h2 v-if="type === 'a' ">A</h2>
         <h2 v-else-if-="type === 'b' ">B</h2> 
         <h2 v-else-if="type === 'a' ">C</h2>
         <h2 v-else>none</h2>
         <hr>
         <input type="text" v-model="type">  Bu ikkinchisi-->
 
-        <!-- <template v-if="Visible">
+    <!-- <template v-if="Visible">
             <h2>Title name</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, repudiandae.</p>
         </template>
@@ -163,14 +163,14 @@
 
     </div> -->
 
-        <!--This thirteenth lesson-->
+    <!--This thirteenth lesson-->
 
-        <!-- <div id="app"> -->
+    <!-- <div id="app"> -->
 
-        <!-- <h1 v-if="isVisibel">I am visible!</h1>
+    <!-- <h1 v-if="isVisibel">I am visible!</h1>
             <h2 v-else>i am not visible!</h2> -->
 
-        <!-- <h2 v-show="isVisibel">you can see me </h2>
+    <!-- <h2 v-show="isVisibel">you can see me </h2>
             <h2 v-show="!isVisibel">you can not see me</h2>
 
             <hr>
@@ -178,20 +178,87 @@
             <button @click="isVisibel= !isVisibel">toggle</button>
         </div> -->
 
-        <!--This fourteenth lesson-->
+    <!--This fourteenth lesson-->
 
-        <div id="app">
+    <!-- <div id="app"> -->
+    <!-- <ul>
+                <li>{{people[0] }}</li>
+                <li>{{people[1] }}</li>
+                <li>{{people[2] }}</li>
+                <li>{{people[3] }}</li>
+                <li>{{people[4] }}</li>
+            </ul> Bu oddiy kornishi-->
 
-        </div>
+    <!-- 
+            <ul>
+                <li v-for="person in people">
+                    {{person}}
+                </li>
+            </ul> Bu qisqasi tepadgni -->
+
+    <!-- <ul>
+                <li v-for="(person,index) in people">{{index + 1}} {{person}}</li>
+            </ul> Bunda index qo'shib orqali nomerlar qosha olamiz-->
+    <!-- <ul>
+                <li v-for="(person, index) in people">
+                    {{index + 1 }}. {{person.name}} -<b> {{person.age}}</b>
+                </li>
+            </ul>
+
+            <hr>
+
+            <ol>
+                <li v-for="num in worker">{{num}}</li>
+            </ol>
+
+        </div> -->
+
+    <!-- This fifteenth lesson and 16 lesson-->
+
+    <!-- <div id="app">
+        <h1>
+            Counter {{counter}}
+        </h1>
+        <h3>
+            {{condintion}}
+        </h3>
+
+
+        <button @click="changing">Add</button>
+        <button @click="changing2">Add</button>
+        <h4>
+            {{result()}}
+        </h4>
+        <p>
+            {{last}}
+        </p>
+    </div> -->
+
+    <!--This seventeeth lesson-->
+
+    <div id="app">
+        <h2>
+            {{title}}
+        </h2>
+        <h4>
+            {{newfield}}
+        </h4>
+        <button @click="subject = 'you are clever' ">creating</button>
+    </div>
+    <hr>
+    <div id="app2">
+        <h1>
+            {{title}}
+        </h1>
+
+        <button @click="salom">New</button>
+    </div>
 
 
 
-
-
-
-        <script src=" https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"> </script>
-        <script src="./app.js">
-        </script>
+    <script src=" https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"> </script>
+    <script src="./app.js">
+    </script>
 
 </body>
 
