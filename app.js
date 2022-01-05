@@ -88,7 +88,7 @@
 //           RiseNumber2: function (ad, event) {
 //               this.adder += ad
 //               if (ad == 10) {
-//                   event.target.style.color = "greeng"
+//                   event.target.style.color = "green"
 //               }
 //           }
 //       }
@@ -284,33 +284,177 @@
 
 // This Seventeenth lesson
 
-let vue1 = new Vue({
-    el: '#app',
-    data: {
-        title: 'hello vue'
-    },
-    methods: {
-        alertFast: function () {
-            alert('do you want to join vue 1')
-        }
-    }
+// let vue1 = new Vue({
+//     el: '#app',
+//     data: {
+//         title: 'hello vue'
+//     },
+//     methods: {
+//         alertFast: function () {
+//             alert('do you want to join vue 1')
+//         }
+//     }
 
-});
-console.log(vue1)
-vue1.newfield = 'Random text'
-new Vue({
-    el: '#app2',
-    data: {
-        title: 'hello vue2'
-    },
-    methods: {
-        salom: function () {
-            vue1.title = 'hello everyone'
-            vue1.newfield = 'my friends are very clever'
+// });
+// console.log(vue1)
+// vue1.newfield = 'Random text'
+// new Vue({
+//     el: '#app2',
+//     data: {
+//         title: 'hello vue2'
+//     },
+//     methods: {
+//         salom: function () {
+//             vue1.title = 'hello everyone'
+//             vue1.newfield = 'my friends are very clever'
 
-            setTimeout(function () {
-                vue1.alertFast()
-            }, 5000)
-        }
-    }
-})
+//             setTimeout(function () {
+//                 vue1.alertFast()
+//             }, 1000)
+//         }
+//     }
+// })
+
+
+// This eighteenth lesson
+
+// new Vue({
+//     el: '#app',
+//     data: {
+//         text: 'hello everone'
+//     },
+//     methods: {
+//         Update: function () {
+//             this.text = 'welcome'
+//             this.$refs.heading.style.color = 'red'
+//             console.log(this.$refs.heading)
+//             console.log(this.$refs.horeLine)
+
+//             //bu boshqa kornishi
+//             console.log(document.querySelector('hr'))
+//         }
+//     }
+// })
+
+// This nineteenth lesson
+
+// var vue = new Vue({
+//     data: {
+//         title: 'hello vue this coolo'
+//     },
+//     template: '<div><h1> {{title}}</h1><p>salom maening dostim</p></div> '
+// });
+// vue.$mount('#app')
+
+// This twenty lesson
+
+// new Vue({
+//     el: '#app',
+//     data: {
+//         title: 'hello vue'
+//     },
+
+//     beforeCreated: function () {
+//         console.log('Before created')
+//     },
+//     created: function () {
+//         console.log("Created")
+//     },
+//     beforeMount: function () {
+//         console.log('Before mount')
+//     },
+//     mounted: function () {
+//         console.log('mounted')
+//     },
+//     beforeUpdate: function () {
+//         console.log('beforeMounted')
+//     },
+//     Updated: function () {
+//         console.log('Updated')
+//     },
+//     beforeDestroy: function () {
+//         console.log('Before destroy')
+//     },
+//     destroyed: function () {
+//         console.log('destroyed')
+//     },
+//     methods: {
+//         doDestroy: function () {
+//             this.$destroy()
+//         }
+//     }
+// });
+
+// This Twenty first lesson
+
+//vue-cli 
+//vue-cli helps our js file and prepare our server
+
+
+// This block 4 lesson first  and 2
+
+// Vue.component('my-counter', {
+//     template: `
+//     <div style="border: 2px solid black; padding: 10px;">
+//          <h1>
+//                 Counter: {{counter}}
+//         </h1>
+//               <button @click="add">Add to counter</button>
+//    </div>
+//     `,
+//     data: function () {
+//         return {
+//             counter: 0
+//         }
+//     },
+//     methods: {
+//         add: function () {
+//             this.counter++
+//         }
+//     }
+// })
+
+// new Vue({
+//     el: '#app',
+
+// })
+
+// This block 4 lesson 3  bunda component boshqacha usulda ishaltishni o'rganmiz
+
+// var componen = {
+//     template: `
+//     <div style="border: 2px solid black; padding: 10px;">
+//          <h1>
+//                 Counter: {{counter}}
+//         </h1>
+//               <button @click="add">Add to counter</button>
+//    </div>
+//     `,
+//     data: function () {
+//         return {
+//             counter: 0
+//         }
+//     },
+//     methods: {
+//         add: function () {
+//             this.counter++
+//         }
+//     }
+// }
+
+
+
+
+// new Vue({
+//     el: '#app',
+//     components: {
+//         'my-counter': componen
+//     }
+
+// });
+
+//bunda app2 birinchi qilingan tushadi va unda hatolik bumaydi 2 usulda bu ish ishlamaydi.!!
+
+// new Vue({
+//     el: '#app2',
+// })
